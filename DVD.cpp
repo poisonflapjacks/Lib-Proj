@@ -18,27 +18,27 @@ void DVD::SetDVDTime(int num){
 }
 
 string DVD::GetDVDStudio(){
-	return DVDStudio;
+	return DVD_studio;
 }
 
 void DVD::SetDVDStudio(string studio){
-	DVDStudio=studio;
+	DVD_studio=studio;
 }
 
-string DVD::GetDVDDate(){
-	return DVDDate;
+string DVD::GetDVDReleaseDate(){
+	return DVD_release_date;
 }
 
-void DVD::SetDVDDate(string date){
-	DVDDate=date;
+void DVD::SetDVDReleaseDate(string date){
+	DVD_release_date=date;
 }
 
 void DVD::print(){
 	cout<<"Title: "<<item_name<<endl;
-	cout<<"Studio: "<<DVDStudio<<endl;
+	cout<<"Studio: "<<DVD_studio<<endl;
 	cout<<"Run time: "<<DVD_runtime<<endl;
 	cout<<"Category: "<<item_cat<<endl;
-	cout<<"Release Date: "<<DVDDate<<endl;
+	cout<<"Release Date: "<<DVD_release_date<<endl;
 	cout<<"Cost: "<<item_cost<<endl;
 	cout<<"Status: "<<item_status<<endl;
 	cout<<"Libary ID: "<<item_ID<<endl;

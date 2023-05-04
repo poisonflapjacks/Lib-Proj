@@ -89,6 +89,10 @@ void LibaryItems::addItem(){
 		getline(cin, cat);
 		
 		book* temp= new book(cost, title, author, ISBN, cat);
+		temp->SetItemID(itemCount);
+		incItems();
+		itemList.push_back(temp);
+
 	}
 
 	else if(choiceI =='c'){
@@ -118,6 +122,10 @@ void LibaryItems::addItem(){
 		cin.ignore();
 
 		CD* temp= new CD(cost, title, artist, tracks, release, genre);
+		temp->SetItemID(itemCount);
+		incItems();
+		itemList.push_back(temp);
+
 	}
 
 	else if(choiceI=='d'){
@@ -147,12 +155,12 @@ void LibaryItems::addItem(){
 		cin.ignore();
 
 		DVD* temp = new DVD(cost, title, studio, release, cat, runtime);
-	
 		temp->SetItemID(itemCount);
 		incItems();
-
 		itemList.push_back(temp);
+
 	}
+
 }
 
 /*we are prompting for unique library id so we can have the list iterator for other function use
