@@ -1,7 +1,4 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3
-*/
+//ugg
 #include<iostream>
 #include<string>
 using namespace std;

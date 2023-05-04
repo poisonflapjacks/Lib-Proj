@@ -13,13 +13,15 @@ using namespace std;
 class LibaryItem{
 protected:
 
-	int itemID;
-	float itemCost;
-	string itemStatus;
-	int itemTime;
+	int item_ID;
+	float item_cost;
+	string item_status;
+	int item_time;
+	string item_name;
 
 public:
 
+	
 	int GetItemID();
 	void SetItemID(int ID);
 	
@@ -31,13 +33,13 @@ public:
 
 	int GetItemTime();
 	void SetItemTime(int time);
+
+	string GetItemName();
+	void SetItemName(string name);
 	
 	void printItem(int spot);
 
 	virtual void print() = 0;
-
-	LibaryItem();
-	virtual ~LibaryItem();
 };
 
 #endif
