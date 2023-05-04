@@ -28,7 +28,7 @@ public:
         string GetCDGenre();
         void SetCDGenre(string genre);
 
-        void print();
+        void print() override;
         
         CD(float cost, string title, string artist, int tracks, string release, string genre):LibaryItem(){
                 item_cost=cost;

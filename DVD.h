@@ -35,11 +35,11 @@ public:
         string GetDVDDate();
         void SetDVDDate(string date);
         
-        void print();
+        void print() override;
         
         DVD(float cost, string title, string studio, string release, string cat, int runtime):LibaryItem(){
-                itemStatus="In";
-                itemCost=cost;
+                item_status="In";
+                item_cost=cost;
                 DVDDate=release;
                 DVDStudio=studio;
                 DVDTime=runtime;

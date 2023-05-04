@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040	
-   Asssignment: Hwk 3
-*/
 #include<iostream>
 #include<vector>
 #include<string>

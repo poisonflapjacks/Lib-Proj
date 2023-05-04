@@ -1,6 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4*/
 #ifndef BOOK_H
 #define BOOK_H
 
@@ -24,7 +21,7 @@ public:
 	string GetBookCat();
 	void SetBookCat(string cat);
 
-	void print();
+	void print() override;
 	
 	book(int cost, string title, string author, string ISBN, string cat):LibaryItem(){
 		item_name=title;
