@@ -1,6 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4*/
 #ifndef BOOK_H
 #define BOOK_H
 
@@ -9,15 +6,10 @@
 
 class book: public LibaryItem{
 private:
-
-	string bookTitle;
-	string bookAuthor;
-	string bookISBN;
-	string bookCat;
+	string book_author;
+	string book_ISBN;
 
 public:
-	string GetBookTitle();
-	void SetBookTitle(string title);
 
 	string GetBookAuthor();
 	void SetBookAuthor(string author);
@@ -25,20 +17,16 @@ public:
 	string GetBookISBN();
 	void SetBookISBN(string ISBN);
 
-	string GetBookCat();
-	void SetBookCat(string cat);
-
-	void print();
+	void print() override;
 	
 	book(int cost, string title, string author, string ISBN, string cat):LibaryItem(){
-		bookTitle=title;
-		bookAuthor=author;
-		bookISBN=ISBN;
-		bookCat=cat;
-		itemCost=cost;
-		itemStatus="In";
+		item_name=title;
+		book_author=author;
+		book_ISBN=ISBN;
+		item_cat=cat;
+		item_cost=cost;
+		item_status="In";
 	}
 
 };
-
 #endif

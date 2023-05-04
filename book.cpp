@@ -1,52 +1,32 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3
-*/
 #include<iostream>
 #include<string>
 using namespace std;
 
 #include "book.h"
 
-string book::GetBookTitle(){
-	return bookTitle;
-}
-
-void book::SetBookTitle(string title){
-	bookTitle=title;
-}
-
 string book::GetBookAuthor(){
-	return bookAuthor;
+	return book_author;
 }
 
 void book::SetBookAuthor(string author){
-	bookAuthor=author;
+	book_author=author;
 }
 
 string book::GetBookISBN(){
-	return bookISBN;
+	return book_ISBN;
 }
 
 void book::SetBookISBN(string ISBN){
-	bookISBN=ISBN;
+	book_ISBN=ISBN;
 }
-
-string book::GetBookCat(){
-	return bookCat;
-}
-		
-void book::SetBookCat(string cat){
-	bookCat=cat;
-}
-		
+	
 void book::print(){
-	cout<<"Title: "<<bookTitle<<endl;
-	cout<<"Author: "<<bookAuthor<<endl;
-	cout<<"ISBN: "<<bookISBN<<endl;
-	cout<<"Category: "<<bookCat<<endl;
-	cout<<"Cost: "<<itemCost<<endl;
-	cout<<"Status: "<<itemStatus<<endl;
-	cout<<"Libary ID: "<<itemID<<endl;
-	cout<<"Item Due: "<<itemTime<<"\n\n";
+	cout<<"Title: "<<item_name<<endl;
+	cout<<"Author: "<<book_author<<endl;
+	cout<<"ISBN: "<<book_ISBN<<endl;
+	cout<<"Category: "<<item_cat<<endl;
+	cout<<"Cost: "<<item_cost<<endl;
+	cout<<"Status: "<<item_status<<endl;
+	cout<<"Libary ID: "<<item_ID<<endl;
+	cout<<"Item Due: "<<item_time<<"\n\n";
 }

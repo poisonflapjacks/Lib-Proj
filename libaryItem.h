@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3
-*/
 #ifndef LIBARYITEM_H
 #define LIBARYITEM_H
 
@@ -13,13 +9,17 @@ using namespace std;
 class LibaryItem{
 protected:
 
-	int itemID;
-	float itemCost;
-	string itemStatus;
-	int itemTime;
+	int item_ID;
+	int item_time;
+	float item_cost;
+	string item_status;
+	string item_name;
+	string item_cat;
 
 public:
-
+	string GetItemCat();
+	void SetItemCat(string cat);
+	
 	int GetItemID();
 	void SetItemID(int ID);
 	
@@ -31,13 +31,13 @@ public:
 
 	int GetItemTime();
 	void SetItemTime(int time);
+
+	string GetItemName();
+	void SetItemName(string name);
 	
 	void printItem(int spot);
 
 	virtual void print() = 0;
-
-	LibaryItem();
-	virtual ~LibaryItem();
 };
 
 #endif

@@ -1,6 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3*/
 #include<iostream>
 #include<string>
 
@@ -8,48 +5,61 @@
 using namespace std;
 
 int LibaryItem::GetItemID(){
-	return itemID;
+	return item_ID;
 }
 
 void LibaryItem::SetItemID(int ID){
-	itemID=ID;
+	item_ID=ID;
 }
 
 int LibaryItem::GetItemCost(){
-	return itemCost;
+	return item_cost;
 }
 
 void LibaryItem::SetItemCost(int cost){
-	itemCost=cost;
+	item_cost=cost;
 }
 
 string LibaryItem::GetItemStatus(){
-	return itemStatus;
+	return item_status;
 }
 
 void LibaryItem::SetItemStatus(int status){
 
 	if(status==0){
-		itemStatus="In";
+		item_status ="In";
 	}
 
 	else if(status==1){
-		itemStatus ="In";
+		item_status = "Out";
 	}
 
-	else if(status=2){
-		itemStatus ="Lost";
+	else if(status==2){
+		item_status = "Lost";
 	}
 
 }
 
 int LibaryItem::GetItemTime(){
-	return itemTime;
+	return item_time;
 }
 
 void LibaryItem::SetItemTime(int time){
-	itemTime= time;
+	item_time= time;
 }
 	
-LibaryItem::LibaryItem(){ }
-LibaryItem::~LibaryItem(){ }
+string LibaryItem::GetItemName(){
+	return item_name;
+}
+
+void LibaryItem::SetItemName(string name){
+	item_name = name;
+}
+
+string LibaryItem::GetItemCat(){
+	return item_cat;
+}
+
+void LibaryItem::SetItemCat(string cat){
+	item_cat = cat;
+}

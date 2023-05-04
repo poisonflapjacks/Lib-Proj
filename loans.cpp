@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3
-*/
 #include"loans.h"
 #include "loan.h"
 
@@ -15,7 +11,7 @@ void loans::incLoanCount(){
 	loanCount++;
 }
 
-	/*Here we are reading formatted book data back into our loanlist vector then closing file
+/*Here we are reading formatted book data back into our loanlist vector then closing file
 load ifstream
 create variables
 create loan obj
@@ -73,8 +69,7 @@ load ofstream
 open txt file
 load data in for loop
 fout all data
-close file
-*/
+close file*/
 void loans::storeLoans(){
 
 	ofstream fout;
@@ -95,8 +90,7 @@ Set default status
 Change data in relevant pat and book vectors
 Call time func
 Call inc func
-Push back on vector
-*/
+Push back on vector*/
 void loans::outBook(int bookID, int patID){
 
 	loan newLoan(bookID,patID);
@@ -116,7 +110,7 @@ void loans::inBook(int patSpot, int bookSpot){
 	
 }
 
-	/*Create time_c variable
+/*Create time_c variable
 Read system clock and store
 Return time*/
 time_t loans::currTime(){
@@ -124,7 +118,7 @@ time_t loans::currTime(){
 	return now;
 }
 	
-	/*Get time_ t variable when called
+/*Get time_ t variable when called
 Convert to local time variable using time struct
 Return string*/
 string loans::printTime(time_t due){
@@ -136,10 +130,10 @@ string loans::printTime(time_t due){
 	return timePrinted;
 }
 		
-	/*Call current time func
+/*Call current time func
 Iterate through all loans and compare their due time to curr time
-If the due time is less than curr time print out all details for that loan
-*/
+If the due time is less than curr time 
+print out all details for that loan*/
 void loans::printAllOverdue(){
 	time_t now=currTime();
 
@@ -161,8 +155,7 @@ void loans::printAllOverdue(){
 /*Create variables
 Prompt for loan id
 Iterate through loan list until match is found
-Return location of match
-*/
+Return location of match*/
 int loans::findLoan(){
 	int ID;
 	int loanSpot;
@@ -182,8 +175,7 @@ int loans::findLoan(){
 /*Get locations of patron and book spots in lists from main
 Pull book value from book obj
 Add to patron balance
-Change status of book to lost
-*/				
+Change status of book to lost*/				
 void loans::reportLost(int patSpot, int bookSpot){
 
 }

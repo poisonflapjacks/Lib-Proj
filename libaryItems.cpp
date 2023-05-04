@@ -22,15 +22,14 @@ open txt file
 load data
 pushback data into vector
 close file*/
-
 void LibaryItems::loadItems(){
 	/*Store item
-		Here we are reading formatted item data back into our book.txt then closing file
-		load ofstream
-		open txt file
-		load data in for loop
-		fout all data with each entry having an identifier in front of its data for formatting, "b" for book, "c"                for CD, "d" for DVD
-		close file*/
+	Here we are reading formatted item data back into our book.txt then closing file
+	load ofstream
+	open txt file
+	load data in for loop
+	fout all data with each entry having an identifier in front of its data for formatting, "b" for book, "c"                for CD, "d" for DVD
+	close file*/
 }
 
 void LibaryItems::storeItems(){
@@ -58,8 +57,7 @@ Getline and cin data
 Set default status
 Call inc func
 Set item pointer to address of specific obj
-Push back on vector
-*/
+Push back on vector*/
 void LibaryItems::addItem(){
 	
 	cout<<"What type of Item are you adding?\nb - Book\nc - CD\nd - DVD\n";
@@ -89,6 +87,10 @@ void LibaryItems::addItem(){
 		getline(cin, cat);
 		
 		book* temp= new book(cost, title, author, ISBN, cat);
+		temp->SetItemID(itemCount);
+		incItems();
+		itemList.push_back(temp);
+
 	}
 
 	else if(choiceI =='c'){
@@ -118,6 +120,10 @@ void LibaryItems::addItem(){
 		cin.ignore();
 
 		CD* temp= new CD(cost, title, artist, tracks, release, genre);
+		temp->SetItemID(itemCount);
+		incItems();
+		itemList.push_back(temp);
+
 	}
 
 	else if(choiceI=='d'){
@@ -147,12 +153,12 @@ void LibaryItems::addItem(){
 		cin.ignore();
 
 		DVD* temp = new DVD(cost, title, studio, release, cat, runtime);
-	
 		temp->SetItemID(itemCount);
 		incItems();
-
 		itemList.push_back(temp);
+
 	}
+
 }
 
 /*we are prompting for unique library id so we can have the list iterator for other function use
@@ -175,6 +181,7 @@ int LibaryItems::findItem(){
 		}
 
 	}
+
 	return spot;
 }
 
@@ -187,8 +194,7 @@ void LibaryItems::deleteItem(int spot){
 create choice menu
 prompt for what change
 prompt for item info
-update relevant item data member
-*/
+update relevant item data member*/
 void LibaryItems::editItem(int spot){
 	float price;
 	cout<<"Enter new price"<<endl;
@@ -201,8 +207,8 @@ void LibaryItems::editItem(int spot){
 }
 
 /*Create for loop of list
-At every location print all relevant data members by calling virtual print function so formatting is correct for each type of obj
-*/
+At every location print all relevant data members by calling
+virtual print function so formatting is correct for each type of obj*/
 void LibaryItems::printAllItems(){
 
 	for(int i=0; i<itemList.size(); i++){
@@ -212,15 +218,14 @@ void LibaryItems::printAllItems(){
 }
 
 /*in main we get our position, here we are using that data to get our formatted info
-receive vector location, then print all relevant data members with info describing what is being shown
-*/
+receive vector location, then print all relevant 
+data members with info describing what is being shown*/
 void LibaryItems::printItem(int spot){
 	itemList.at(spot)->print();
 }
 
 /*Receive spot in vector, and return id num,
-useful to get around permission issues 
-*/
+useful to get around permission issues */
 int LibaryItems::ReturnItemID(int spot){
 	int ID=itemList.at(spot)->GetItemID();
 	return ID;

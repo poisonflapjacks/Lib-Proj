@@ -12,25 +12,25 @@
 using namespace std;
 
 class patron{
-	private:
-	string patName;
-	int patID, patNumItems;
-	float patBalance;
+private:
+	string pat_name;
+	int pat_ID, pat_num_items;
+	float pat_balance;
 	vector<int>patItems;
 		
-	public:
+public:
 	patron(){
-		patName = " ";
-		patID = -1;
-		patBalance= 0;
-		patNumItems=0;
+		pat_name = " ";
+		pat_ID = -1;
+		pat_balance= 0;
+		pat_num_items=0;
     }
 
 	patron(string name, int ID, float balance){
-		patName = name;
-		patID = ID;
-		patBalance= balance;
-		patNumItems=0;
+		pat_name = name;
+		pat_ID = ID;
+		pat_balance = balance;
+		pat_num_items = 0;
     }
 
 	string GetPatName();
@@ -48,5 +48,4 @@ class patron{
 	void addItem(int itemID);
 	void printItems();
 };
-
 #endif

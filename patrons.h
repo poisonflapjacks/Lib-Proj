@@ -34,5 +34,4 @@ public:
 	void getPatItemList();
 	void ListItems(int spot);
 };
-
 #endif

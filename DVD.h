@@ -12,44 +12,33 @@
 class DVD: public LibaryItem{
         
 private:
-
-        string DVDTitle;
-        string DVDCat;
-        int  DVDTime;
-        string DVDStudio;
-        string DVDDate;
+        int  DVD_runtime;
+        string DVD_studio;
+        string DVD_release_date;
 
 public:
-        string GetDVDTitle();
-        void SetDVDTitle(string title);
-
-        string GetDVDCat();
-        void SetDVDCat(string cat);
-
         int GetDVDTime();
         void SetDVDTime(int num);
 
         string GetDVDStudio();
         void SetDVDStudio(string studio);
 
-        string GetDVDDate();
-        void SetDVDDate(string date);
+        string GetDVDReleaseDate();
+        void SetDVDReleaseDate(string date);
         
-        void print();
+        void print() override;
         
         DVD(float cost, string title, string studio, string release, string cat, int runtime):LibaryItem(){
-                itemStatus="In";
-                itemCost=cost;
-                DVDDate=release;
-                DVDStudio=studio;
-                DVDTime=runtime;
-                DVDCat=cat;
-                DVDTitle=title;
-                DVDStudio=studio;
+                item_status="In";
+                item_cost=cost;
+                DVD_release_date=release;
+                DVD_studio=studio;
+                DVD_runtime=runtime;
+                item_cat=cat;
+                item_name=title;
         }
 
         virtual ~DVD(){ };
 
 };
-
 #endif

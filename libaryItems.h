@@ -12,11 +12,11 @@
 using namespace std;
 
 class LibaryItems{
-	private:
+private:
         vector<LibaryItem*>itemList;
         int itemCount=100000;
 
-        public:
+public:
         void loadItems();
         void storeItems();
         void incItems();
