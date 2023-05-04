@@ -10,40 +10,40 @@
 using namespace std;
 
 string patron::GetPatName(){
-	return patName;
+	return pat_name;
 }
 
 void patron::SetPatName(string name){
-	patName=name;
+	pat_name=name;
 }
 
 int patron::GetPatID(){
-	return patID;
+	return pat_ID;
 }
 
 void patron::SetPatID(int ID){
-	patID=ID;
+	pat_ID=ID;
 }
 
 float patron::GetPatBalance(){
-	return patBalance;
+	return pat_balance;
 }
 
 void patron::SetPatBalance(int balance){
-	patBalance=balance;
+	pat_balance=balance;
 }
 
 int patron::GetPatNumItems(){
-	return patNumItems;
+	return pat_num_items;
 }
 
 void patron::SetPatNumItems(int numItems){
-	patNumItems=numItems;
+	pat_num_items=numItems;
 }
 
 void patron::addItem(int itemID){
 	patItems.push_back(itemID);
-	patNumItems++;
+	pat_num_items++;
 }
 
 void patron::printItems(){
