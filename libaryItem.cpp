@@ -27,15 +27,15 @@ string LibaryItem::GetItemStatus(){
 void LibaryItem::SetItemStatus(int status){
 
 	if(status==0){
-		item_status="In";
+		item_status ="In";
 	}
 
 	else if(status==1){
-		item_status ="Out";
+		item_status = "Out";
 	}
 
-	else if(status=2){
-		item_status ="Lost";
+	else if(status==2){
+		item_status = "Lost";
 	}
 
 }

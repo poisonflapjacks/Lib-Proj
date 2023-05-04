@@ -11,7 +11,7 @@
 using namespace std;
 
 class loan{
-	private:
+private:
 	int loan_ID;
 	int loan_item_ID;
 	int loan_pat_ID;
@@ -20,7 +20,7 @@ class loan{
 	string loan_item_name;
 	string loan_pat_name;
 
-	public:
+public:
 	loan(){
 		loan_ID=0;
 		loan_item_ID=0;
@@ -55,6 +55,4 @@ class loan{
 	string GetLoanStatus();
 
 };
-
 #endif
-

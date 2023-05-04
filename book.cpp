@@ -19,20 +19,12 @@ string book::GetBookISBN(){
 void book::SetBookISBN(string ISBN){
 	book_ISBN=ISBN;
 }
-
-string book::GetBookCat(){
-	return book_cat;
-}
-		
-void book::SetBookCat(string cat){
-	book_cat=cat;
-}
-		
+	
 void book::print(){
 	cout<<"Title: "<<item_name<<endl;
 	cout<<"Author: "<<book_author<<endl;
 	cout<<"ISBN: "<<book_ISBN<<endl;
-	cout<<"Category: "<<book_cat<<endl;
+	cout<<"Category: "<<item_cat<<endl;
 	cout<<"Cost: "<<item_cost<<endl;
 	cout<<"Status: "<<item_status<<endl;
 	cout<<"Libary ID: "<<item_ID<<endl;

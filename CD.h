@@ -12,8 +12,9 @@
 class CD: public LibaryItem{
 private:
         string CD_artist;
-        int  CD_num_tracks;
         string CD_date;
+        int  CD_num_tracks;
+        
 
 public:
         string GetCDArtist();

@@ -9,11 +9,11 @@
 using namespace std;
 
 class loans{
-	private:
-		
+private:
 	vector<loan>loanList;
 	int loanCount=100000;
-	public:
+
+public:
 	void incLoanCount();
 	void loadLoans();
 	void storeLoans();
