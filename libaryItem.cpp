@@ -31,7 +31,7 @@ void LibaryItem::SetItemStatus(int status){
 	}
 
 	else if(status==1){
-		item_status ="In";
+		item_status ="Out";
 	}
 
 	else if(status=2){

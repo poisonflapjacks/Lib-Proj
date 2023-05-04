@@ -9,28 +9,12 @@ using namespace std;
 
 #include "DVD.h"
 
-string DVD::GetDVDTitle(){
-	return DVDTitle;
-}
-
-void DVD::SetDVDTitle(string title){
-	DVDTitle=title;
-}
-
-string DVD::GetDVDCat(){
-	return DVDCat;
-}
-
-void DVD::SetDVDCat(string cat){
-	DVDCat=cat;
-}
-
 int DVD::GetDVDTime(){
-	return DVDTime;
+	return DVD_runtime;
 }
 
 void DVD::SetDVDTime(int num){
-	DVDTime=num;
+	DVD_runtime=num;
 }
 
 string DVD::GetDVDStudio(){
@@ -50,13 +34,13 @@ void DVD::SetDVDDate(string date){
 }
 
 void DVD::print(){
-	cout<<"Title: "<<DVDTitle<<endl;
+	cout<<"Title: "<<item_name<<endl;
 	cout<<"Studio: "<<DVDStudio<<endl;
-	cout<<"Run time: "<<DVDTime<<endl;
-	cout<<"Category: "<<DVDCat<<endl;
+	cout<<"Run time: "<<DVD_runtime<<endl;
+	cout<<"Category: "<<item_cat<<endl;
 	cout<<"Release Date: "<<DVDDate<<endl;
-	cout<<"Cost: "<<itemCost<<endl;
-	cout<<"Status: "<<itemStatus<<endl;
-	cout<<"Libary ID: "<<itemID<<endl;
-	cout<<"Item Due: "<<itemTime<<"\n\n";
+	cout<<"Cost: "<<item_cost<<endl;
+	cout<<"Status: "<<item_status<<endl;
+	cout<<"Libary ID: "<<item_ID<<endl;
+	cout<<"Item Due: "<<item_time<<"\n\n";
 }

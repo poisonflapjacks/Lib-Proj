@@ -10,9 +10,9 @@ class LibaryItem{
 protected:
 
 	int item_ID;
+	int item_time;
 	float item_cost;
 	string item_status;
-	int item_time;
 	string item_name;
 	string item_cat;
 

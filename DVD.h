@@ -12,20 +12,11 @@
 class DVD: public LibaryItem{
         
 private:
-
-        string DVDTitle;
-        string DVDCat;
-        int  DVDTime;
+        int  DVD_runtime;
         string DVDStudio;
         string DVDDate;
 
 public:
-        string GetDVDTitle();
-        void SetDVDTitle(string title);
-
-        string GetDVDCat();
-        void SetDVDCat(string cat);
-
         int GetDVDTime();
         void SetDVDTime(int num);
 
@@ -42,9 +33,9 @@ public:
                 item_cost=cost;
                 DVDDate=release;
                 DVDStudio=studio;
-                DVDTime=runtime;
-                DVDCat=cat;
-                DVDTitle=title;
+                DVD_runtime=runtime;
+                item_cat=cat;
+                item_name=title;
                 DVDStudio=studio;
         }
 
