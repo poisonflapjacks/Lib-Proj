@@ -172,7 +172,8 @@ void patrons::printAllPatrons(){
 }
 
 /*In main we get our position, here we are using that data to get our formated info
-receive vector location, then print all relevant data members with info describing what is being shown*/
+receive vector location, then print all relevant 
+data members with info describing what is being shown*/
 void patrons::printPatron(int spot){
 
         cout<<"Name: "<<patronList.at(spot).GetPatName()<<endl;
