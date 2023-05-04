@@ -9,54 +9,46 @@ using namespace std;
 
 #include "CD.h"
 
-string CD::GetCDTitle(){
-	return CDTitle;
-}
-
-void CD::SetCDTitle(string title){
-	CDTitle=title;
-}
-
 string CD::GetCDArtist(){
-	return CDArtist;
+	return CD_artist;
 }
 
 void CD::SetCDArtist(string artist){
-	CDArtist=artist;
+	CD_artist=artist;
 }
 
 int CD::GetCDNumTracks(){
-	return CDNumTracks;
+	return CD_num_tracks;
 }
 
 void CD::SetCDNumTracks(int num){
-	CDNumTracks=num;
+	CD_num_tracks=num;
 }
 
 string CD::GetCDDate(){
-	return CDDate;
+	return CD_date;
 }
 
 void CD::SetCDDate(string date){
-	CDDate=date;
+	CD_date=date;
 }
 
 string CD::GetCDGenre(){
-	return CDGenre;
+	return item_cat;
 }
 
 void CD::SetCDGenre(string genre){
-	CDGenre=genre;
+	item_cat=genre;
 }
 	
 void CD::print(){
-	cout<<"Title: "<<CDTitle<<endl;
-	cout<<"Artist: "<<CDArtist<<endl;
-	cout<<"Number of tracks: "<<CDNumTracks<<endl;
-	cout<<"Genre: "<<CDGenre<<endl;
-	cout<<"Release Date: "<<CDDate<<endl;
-	cout<<"Cost: "<<itemCost<<endl;
-	cout<<"Status: "<<itemStatus<<endl;
-	cout<<"Libary ID: "<<itemID<<endl;
-	cout<<"Item Due: "<<itemTime<<"\n\n";
+	cout<<"Title: "<<item_name<<endl;
+	cout<<"Artist: "<<CD_artist<<endl;
+	cout<<"Number of tracks: "<<CD_num_tracks<<endl;
+	cout<<"Genre: "<<item_cat<<endl;
+	cout<<"Release Date: "<<CD_date<<endl;
+	cout<<"Cost: "<<item_cost<<endl;
+	cout<<"Status: "<<item_status<<endl;
+	cout<<"Libary ID: "<<item_ID<<endl;
+	cout<<"Item Due: "<<item_time<<"\n\n";
 }

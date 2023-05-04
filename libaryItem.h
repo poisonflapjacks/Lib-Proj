@@ -18,9 +18,11 @@ protected:
 	string item_status;
 	int item_time;
 	string item_name;
+	string item_cat;
 
 public:
-
+	string GetItemCat();
+	void SetItemCat(string cat);
 	
 	int GetItemID();
 	void SetItemID(int ID);

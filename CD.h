@@ -11,16 +11,11 @@
 
 class CD: public LibaryItem{
 private:
-        string CDTitle;
-        string CDArtist;
-        int  CDNumTracks;
-        string CDDate;
-        string CDGenre;
+        string CD_artist;
+        int  CD_num_tracks;
+        string CD_date;
 
 public:
-        string GetCDTitle();
-        void SetCDTitle(string title);
-
         string GetCDArtist();
         void SetCDArtist(string artist);
 
@@ -36,13 +31,13 @@ public:
         void print();
         
         CD(float cost, string title, string artist, int tracks, string release, string genre):LibaryItem(){
-                itemCost=cost;
-                CDTitle=title;
-                CDArtist=artist;
-                CDNumTracks=tracks;
-                CDDate=release;
-                CDGenre=genre;
-                itemStatus="In";
+                item_cost=cost;
+                item_name=title;
+                CD_artist=artist;
+                CD_num_tracks=tracks;
+                CD_date=release;
+                item_cat=genre;
+                item_status="In";
         }
 
 };

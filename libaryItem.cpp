@@ -58,3 +58,9 @@ string LibaryItem::GetItemName(){
 void LibaryItem::SetItemName(string name){
 	item_name = name;
 }
+string LibaryItem::GetItemCat(){
+	return item_cat;
+}
+void LibaryItem::SetItemCat(string cat){
+	item_cat = cat;
+}
