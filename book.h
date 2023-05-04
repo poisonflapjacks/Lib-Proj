@@ -9,15 +9,11 @@
 
 class book: public LibaryItem{
 private:
-
-	string bookTitle;
-	string bookAuthor;
-	string bookISBN;
-	string bookCat;
+	string book_author;
+	string book_ISBN;
+	string book_cat;
 
 public:
-	string GetBookTitle();
-	void SetBookTitle(string title);
 
 	string GetBookAuthor();
 	void SetBookAuthor(string author);
@@ -31,12 +27,12 @@ public:
 	void print();
 	
 	book(int cost, string title, string author, string ISBN, string cat):LibaryItem(){
-		bookTitle=title;
-		bookAuthor=author;
-		bookISBN=ISBN;
-		bookCat=cat;
-		itemCost=cost;
-		itemStatus="In";
+		item_name=title;
+		book_author=author;
+		book_ISBN=ISBN;
+		book_cat=cat;
+		item_cost=cost;
+		item_status="In";
 	}
 
 };
