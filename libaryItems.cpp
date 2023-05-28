@@ -45,7 +45,6 @@ void LibaryItems::storeItems(){
 	fout.close();*/
 }
 
-/*increase item count for lib id*/
 void LibaryItems::incItems(){
 	itemCount++;
 }
@@ -86,7 +85,7 @@ void LibaryItems::addItem(){
 		cout<<"Please Enter Book Category:\n";
 		getline(cin, cat);
 		
-		book* temp= new book(cost, title, author, ISBN, cat);
+		LibaryItem* temp= new book(cost, title, author, ISBN, cat);
 		temp->SetItemID(itemCount);
 		incItems();
 		itemList.push_back(temp);
@@ -119,7 +118,7 @@ void LibaryItems::addItem(){
 		cin>>tracks;
 		cin.ignore();
 
-		CD* temp= new CD(cost, title, artist, tracks, release, genre);
+		LibaryItem* temp= new CD(cost, title, artist, tracks, release, genre);
 		temp->SetItemID(itemCount);
 		incItems();
 		itemList.push_back(temp);
@@ -152,7 +151,7 @@ void LibaryItems::addItem(){
 		cin>>runtime;
 		cin.ignore();
 
-		DVD* temp = new DVD(cost, title, studio, release, cat, runtime);
+		LibaryItem* temp = new DVD(cost, title, studio, release, cat, runtime);
 		temp->SetItemID(itemCount);
 		incItems();
 		itemList.push_back(temp);

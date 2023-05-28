@@ -80,7 +80,7 @@ void Patrons::addPatron(){
         float balance;
         int libID, numBooks;
 
-        Patron* newPat;
+        Patron* newPat = new Patron;
 
         cout<<"Enter new Patron name: "<<endl;
         getline(cin, name);
@@ -88,7 +88,6 @@ void Patrons::addPatron(){
 
         newPat->SetPatID(patCount);
         incPatrons();
-        //FIXME: Cpp doesn't allow pushing back a pointer because memory leak
         patronList.push_back(newPat);
 }
 
