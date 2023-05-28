@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4
-*/
 #ifndef PATRONS_H
 #define PATRONS_H
 
@@ -11,9 +7,9 @@
 
 using namespace std;
 
-class patrons{
+class Patrons{
 private:
-	vector<patron>patronList;
+	vector<Patron*>patronList;
 	int patCount=100000;
 
 public:
@@ -31,7 +27,6 @@ public:
 	float getPatBalance(int spot);
 	int getPatID(int spot);
 	void addPatItem(int spot, int itemID);
-	void getPatItemList();
 	void ListItems(int spot);
 };
 #endif

@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3
-*/
 #ifndef PATRON_H
 #define PATRON_H
 
@@ -11,7 +7,7 @@
 
 using namespace std;
 
-class patron{
+class Patron{
 private:
 	string pat_name;
 	int pat_ID, pat_num_items;
@@ -19,18 +15,18 @@ private:
 	vector<int>patItems;
 		
 public:
-	patron(){
+	Patron(){
 		pat_name = " ";
 		pat_ID = -1;
 		pat_balance= 0;
 		pat_num_items=0;
     }
 
-	patron(string name, int ID, float balance){
+	Patron(string name, int ID, float balance, int num_items){
 		pat_name = name;
 		pat_ID = ID;
 		pat_balance = balance;
-		pat_num_items = 0;
+		pat_num_items = num_items;
     }
 
 	string GetPatName();

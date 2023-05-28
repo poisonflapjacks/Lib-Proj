@@ -1,52 +1,47 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 3
-*/
-
 #include<iostream>
 #include<string>
 
 #include"patron.h"
 using namespace std;
 
-string patron::GetPatName(){
+string Patron::GetPatName(){
 	return pat_name;
 }
 
-void patron::SetPatName(string name){
+void Patron::SetPatName(string name){
 	pat_name=name;
 }
 
-int patron::GetPatID(){
+int Patron::GetPatID(){
 	return pat_ID;
 }
 
-void patron::SetPatID(int ID){
+void Patron::SetPatID(int ID){
 	pat_ID=ID;
 }
 
-float patron::GetPatBalance(){
+float Patron::GetPatBalance(){
 	return pat_balance;
 }
 
-void patron::SetPatBalance(int balance){
+void Patron::SetPatBalance(int balance){
 	pat_balance=balance;
 }
 
-int patron::GetPatNumItems(){
+int Patron::GetPatNumItems(){
 	return pat_num_items;
 }
 
-void patron::SetPatNumItems(int numItems){
+void Patron::SetPatNumItems(int numItems){
 	pat_num_items=numItems;
 }
 
-void patron::addItem(int itemID){
+void Patron::addItem(int itemID){
 	patItems.push_back(itemID);
 	pat_num_items++;
 }
 
-void patron::printItems(){
+void Patron::printItems(){
 	for (int i=0; i<patItems.size();i++){
 		cout<<"Item #"<<i<<"lib id: "<<patItems.at(i)<<endl;
 	}
