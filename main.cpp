@@ -22,10 +22,10 @@ int main(){
 	int userNum;
 	
 	LibaryItems libInv;
-	patrons libPats;
+	Patrons libPats;
 	loans libTrans;
 
-	//libInv.loadItems();
+	libInv.loadItems();
 	libPats.loadPatrons();
 	libTrans.loadLoans();
 
@@ -192,7 +192,7 @@ int main(){
 		
 	}
 
-	//libInv.storeItems();
+	libInv.storeItems();
 	libPats.storePatrons();
 	libTrans.storeLoans();
 
