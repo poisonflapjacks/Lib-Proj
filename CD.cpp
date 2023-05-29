@@ -1,10 +1,6 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4
-*/
-
 #include <iostream>
 #include <string>
+#include<iomanip>
 using namespace std;
 
 #include "CD.h"
@@ -47,7 +43,7 @@ void CD::print(){
 	cout<<"Number of tracks: "<<CD_num_tracks<<endl;
 	cout<<"Genre: "<<item_cat<<endl;
 	cout<<"Release Date: "<<CD_date<<endl;
-	cout<<"Cost: "<<item_cost<<endl;
+	cout<<"Cost: "<<fixed<<setprecision(2)<<item_cost<<endl;
 	cout<<"Status: "<<item_status<<endl;
 	cout<<"Libary ID: "<<item_ID<<endl;
 	cout<<"Item Due: "<<item_time<<"\n\n";

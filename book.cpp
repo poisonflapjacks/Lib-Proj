@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<iomanip>
 using namespace std;
 
 #include "book.h"
@@ -25,7 +26,7 @@ void book::print(){
 	cout<<"Author: "<<book_author<<endl;
 	cout<<"ISBN: "<<book_ISBN<<endl;
 	cout<<"Category: "<<item_cat<<endl;
-	cout<<"Cost: "<<item_cost<<endl;
+	cout<<"Cost: "<<fixed<<setprecision(2)<<item_cost<<endl;
 	cout<<"Status: "<<item_status<<endl;
 	cout<<"Libary ID: "<<item_ID<<endl;
 	cout<<"Item Due: "<<item_time<<"\n\n";

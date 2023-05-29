@@ -1,10 +1,6 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4
-*/
-
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 #include "DVD.h"
@@ -39,7 +35,7 @@ void DVD::print(){
 	cout<<"Run time: "<<DVD_runtime<<endl;
 	cout<<"Category: "<<item_cat<<endl;
 	cout<<"Release Date: "<<DVD_release_date<<endl;
-	cout<<"Cost: "<<item_cost<<endl;
+	cout<<"Cost: "<<fixed<<setprecision(2)<<item_cost<<endl;
 	cout<<"Status: "<<item_status<<endl;
 	cout<<"Libary ID: "<<item_ID<<endl;
 	cout<<"Item Due: "<<item_time<<"\n\n";
