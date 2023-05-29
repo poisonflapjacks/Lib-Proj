@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4
-*/
 #ifndef CD_H
 #define CD_H
 

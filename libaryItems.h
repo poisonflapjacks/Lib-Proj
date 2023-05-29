@@ -1,7 +1,3 @@
-/* Name: Micheal Chapa
-   Course: CSCE 1040
-   Asssignment: Hwk 4
-*/
 #ifndef LIBARYITEMS_H
 #define LIBARYITEMS_H
 
